@@ -32,14 +32,17 @@ portfolio/
 
 ## Project Development
 
-### Phase 1 (Current)
+### Phase 1 (Main)
 - Created initial project structure
 - Implemented home page layout
 - Developed about page
 - Set up asset organization
 - Established base styling with Tailwind and Bootstrap
 
-
+### Phase 2 (Skills Branch)
+- Created dedicated skills page
+- Modified home page footer design
+- Enhanced overall navigation structure
 
 
 
