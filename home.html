@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/3cf439782a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Define the animation to scroll the cards */
+        @keyframes scrollCarousel {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Apply the animation to the container */
+        .scrolling-cards {
+            display: flex;
+            animation: scrollCarousel 20s linear infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-cover bg-center bg-fixed" style="background-image: url('images/header3.jpg');">
+    <header>
+        <div>
+            <nav class="flex justify-end items-center  p-4">
+                <ul class=" flex space-x-20 mr-32">
+                    <li class="inline-block my-2">
+                        <a href="home.html"
+                            class="text-black text-lg relative transform transition-all duration-300 ease-in-out hover:scale-110 hover:bg-gray-800 hover:text-gray-900">
+                            Home
+                        </a>
+                    </li>
+                    <li class="inline-block  my-2">
+                        <a href="about.html" class="text-black text-lg relative group">
+                            About
+                        </a>
+                    </li>
+                    <li class="inline-block my-2">
+                        <a href="skills.html" class="text-black text-lg relative group">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="inline-block my-2">
+                        <a href="projects.html" class="text-black text-lg relative group">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="inline-block my-2">
+                        <a href="contact.html" class="text-black text-lg relative group">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="relative min-h-screen">
+        <!-- Header/Hero section -->
+        <div class="container mx-auto px-4 pt-20 flex justify-end">
+            <!-- Text content container -->
+            <div class="max-w-3xl ">
+                <!-- Greeting text -->
+                <h1 class="text-black space-y-4">
+                    <span class="block text-6xl font-light mb-2">Hi, I am</span>
+                    <span class="block text-7xl font-bold">Sarah Huho.</span>
+                </h1>
+
+                <!-- Professional title -->
+                <p class="text-black text-2xl mt-6 font-light">
+                    Software Engineer from Kenya
+                </p>
+                <a href="about.html">
+                    <button
+                        class="bg-black text-white mt-14 p-6 rounded-full px-28  transform transition-all duration-300 ease-in-out hover:scale-110 hover:bg-gray-800 hover:text-white">Know
+                        More
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------skills section--------------------------------------------------------->
+    <div class="relative">
+        <div class="absolute inset-x-0 top-1/4 h-full bg-black bg-opacity-90 z-0"></div>
+        <div class="container z-10 mx-auto px-4  bg-black text-center relative">
+            <p class="text-yellow-50 text-xl tracking-wider">EXCLUSIVELY</p>
+
+            <div class="mt-6 flex flex-col">
+                <h2 class="text-6xl">
+                    <span class="text-yellow-900">works</span>
+                    <span class="text-yellow-50">with</span>
+                </h2>
+                <h2 class="text-6xl text-yellow-50 mt-2">
+                    Startups and founders
+                </h2>
+                <div class="w-24 h-1 bg-yellow-900 mt-4"></div>
+
+                <!-----------------------------------------skills card container--------------------------->
+                <div class="relative mt-12">
+                    <!-- Scroll buttons -->
+                    <button onclick="scrollCards('left')"
+                        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-4 rounded-full hover:bg-gray-800 focus:outline-none">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button onclick="scrollCards('right')"
+                        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-4 rounded-full hover:bg-gray-800 focus:outline-none">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- -----------------------Cards ------------------------->
+                    <div id="card-scroll-container" class="flex overflow-x-auto  py-4 max-w-[90%] mx-auto space-x-4">
+                        <!-- Card 1 -->
+                        <div
+                            class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
+                            <div class="rounded-lg  text-sm font-light p-10 ">
+                                <i class="fa-solid fa-code text-5xl mb-8 block"></i>
+                                <h2 class="text-2xl font-medium mb-4">Web Development</h2>
+                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                    It has roots in a piece of classical Latin literature from 45 BC,
+                                    making it over 2000 years old.</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div
+                            class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
+                            <div class="rounded-lg  text-sm font-light p-10 ">
+                                <i class="fa-solid fa-code text-5xl mb-8 block"></i>
+                                <h2 class="text-2xl font-medium mb-4">Web Development</h2>
+                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                    It has roots in a piece of classical Latin literature from 45 BC,
+                                    making it over 2000 years old.</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div
+                            class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
+                            <div class="rounded-lg  text-sm font-light p-10 ">
+                                <i class="fa-solid fa-code text-5xl mb-8 block"></i>
+                                <h2 class="text-2xl font-medium mb-4">Web Development</h2>
+                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                    It has roots in a piece of classical Latin literature from 45 BC,
+                                    making it over 2000 years old.</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div
+                            class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
+                            <div class="rounded-lg  text-sm font-light p-10 ">
+                                <i class="fa-solid fa-code text-5xl mb-8 block"></i>
+                                <h2 class="text-2xl font-medium mb-4">Web Development</h2>
+                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                    It has roots in a piece of classical Latin literature from 45 BC,
+                                    making it over 2000 years old.</p>
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--------------------------------------projects section-------------------------------->
+        <div class="mt-16 z-10 relative">
+            <h2 class="text-yellow-50 text-6xl pl-12">My Work</h2>
+            <div class="container mx-auto px-4">
+                <div class=" scrolling-cards grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+                    <!-- Work Item 1 -->
+                    <div class="relative aspect-[3/4]  overflow-hidden group">
+                        <img src="images/e-commerce.jpg" alt="Social Media App"
+                            class="w-full h-full object-cover block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
+                                            flex flex-col items-center justify-center text-center px-10
+                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
+                            <h3 class="text-white font-medium text-lg mb-5">E-Commerce Website</h3>
+                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
+                                available,
+                                but the majority have suffered alteration in some form.</p>
+                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                               text-red-500 hover:bg-red-50 transition-colors">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Work Item 2 -->
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <img src="images/portfolio.jpg" alt="Portfolio Website"
+                            class="w-full h-full block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60
+                                            flex flex-col items-center justify-center text-center px-10
+                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
+                            <h3 class="text-white font-medium text-lg mb-5">Portfolio Website</h3>
+                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
+                                available,
+                                but the majority have suffered alteration in some form.</p>
+                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                               text-red-500 hover:bg-red-50 transition-colors">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Work Item 3 -->
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <img src="images/chat-app.jpg" alt="Online Shop Web"
+                            class="w-full block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
+                                            flex flex-col items-center justify-center text-center px-10
+                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
+                            <h3 class="text-white font-medium text-lg mb-5">Java Chat App</h3>
+                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
+                                available,
+                                but the majority have suffered alteration in some form.</p>
+                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                               text-red-500 hover:bg-red-50 transition-colors">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-----------------work item 4----------------->
+                    <div class="relative rounded-lg overflow-hidden group">
+                        <img src="images/chat-app.jpg" alt="Online Shop Web"
+                            class="w-full block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
+                                            flex flex-col items-center justify-center text-center px-10
+                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
+                            <h3 class="text-white font-medium text-lg mb-5">Java Chat App</h3>
+                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
+                                available,
+                                but the majority have suffered alteration in some form.</p>
+                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                               text-red-500 hover:bg-red-50 transition-colors">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------------coffee section---------------------------------->
+        <div class="z-10 relative mt-16 p-10">
+            <div class="flex justify-center space-x-64 bg-yellow-50 py-10">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-purple-500">3.2k</h2>
+                    <p class="mt-2 text-gray-600">Hours</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-yellow-900">21</h2>
+                    <p class="mt-2 text-gray-600">Projects</p>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-pink-500">18.3k</h2>
+                    <p class="mt-2 text-gray-600">Cups of Coffee</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--------------------------------footer section-------------------------------------->
+    <div class="relative ">
+        <div class="bg-black pt-0 items-center justify-center min-h-screen">
+            <div class="text-center ">
+                <!-- Name Section -->
+                <h1 class="text-3xl font-bold text-yellow-50">Sarah</h1>
+                <h2 class="text-4xl font-semibold text-yellow-50 mt-2">Huho</h2>
+                <div class="border-t-4 border-yellow-900 w-16 mx-auto mt-2"></div>
+
+                <!-- Social Icons Section -->
+                <div class="flex justify-center space-x-6 mt-6 text-gray-400">
+                    <a href="https://twitter.com" target="_blank" class="hover:text-blue-400">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-pink-500">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="hover:text-gray-100">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-blue-600">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://snapchat.com" target="_blank" class="hover:text-yellow-400">
+                        <i class="fab fa-snapchat text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="font-light  bg-yellow-900 py-6 text-center text-yellow-50">
+        copyright © Sarah made with <i class="fa-solid fa-heart text-yellow-50"></i> by Easy learning
+      </div>
+      
+    <script src="script.js"></script>
+</body>
+
+</html>
