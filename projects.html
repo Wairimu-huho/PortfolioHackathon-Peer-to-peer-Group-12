@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://kit.fontawesome.com/3cf439782a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-black">
+    <header>
+        <div>
+            <nav class="flex justify-end items-center  p-4">
+                <ul class=" flex space-x-20 mr-32">
+                    <li class="inline-block my-2">
+                        <a href="home.html"
+                            class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                            Home
+                        </a>
+                    </li>
+                    <li class="inline-block  my-2">
+                        <a href="about.html" class="text-white text-lg relative hover:text-yellow-500 transition duration-300" >
+                            About
+                        </a>
+                    </li>
+                    <li class="inline-block my-2">
+                        <a href="skills.html" class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="inline-block my-2">
+                        <a href="projects.html" class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="inline-block my-2">
+                        <a href="contact.html" class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!------------------------------------projects section----------------------------->
+    <div class="max-w-6xl mx-auto p-6">
+        <h2 class="text-5xl text-yellow-50 font-bold mb-12 text-center">My Projects</h2>
+        <h1 class="text-3xl font-bold text-center text-yellow-500 mb-14 font-serif">Here are examples of my notable works:</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Project 1 -->
+            <div class="bg-yellow-50 rounded-lg overflow-hidden shadow-lg">
+                <img src="images/e commerce-3.jpg" alt="Chic Boutique" class="w-full">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">E-Commerce Platform </h2>
+                    <p class="mb-4 "> Developed a fully responsive e-commerce platform for Henki Limited, a leading
+                        electronics retailer using HTML5 and CSS3 for responsive layouts, and SQL for efficient database
+                        management.
+                    </p>
+                    <div class="bg-yellow-900 p-6 rounded-lg shadow-md max-w-lg w-full">
+                        <button
+                            class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                            onclick="toggleAccordion(event)">
+                            More Details.. <span class="font-bold">+</span>
+                        </button>
+                        <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                            The website features a modern product catalog with advanced filtering,
+                            real-time inventory tracking, and secure payment processing. Implemented a user-friendly
+                            interface showcasing various electronic categories including smartphones, laptops, gaming
+                            consoles, and accessories. <br> The platform includes a robust search function, detailed
+                            product
+                            descriptions, customer reviews, and a streamlined checkout process. The implementation
+                            resulted in a 40% increase in online sales and
+                            significantly improved user engagement metrics.
+                        </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-yellow-50 rounded-lg overflow-hidden shadow-lg">
+                <img src="images/portfolio-2.jpeg" alt="HungryBites" class="w-full">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">portfolio Website</h2>
+                    <p class="mb-4"> Crafted an elegant portfolio website for a professional photographer/videographer
+                        using HTML5, Tailwind CSS, and JavaScript. </p>
+                    <div class="bg-yellow-900 p-6 rounded-lg shadow-md max-w-lg w-full">
+                        <button
+                            class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                            onclick="toggleAccordion(event)">
+                            More Details.. <span class="font-bold">+</span>
+                        </button>
+                        <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                            The site features a stunning gallery with lazy
+                            loading for optimal performance, showcasing both photography and video content in a masonry
+                            grid
+                            layout. Implemented smooth transitions and animations to enhance the viewing experience of
+                            high-resolution images and video showreels. <br> The website includes a dynamic filtering
+                            system
+                            allowing visitors to sort through different photography categories such as weddings,
+                            portraits,
+                            and commercial work. Built a custom lightbox feature for immersive full-screen image viewing
+                            and
+                            integrated a video player for seamless showreel playback. Additionally, incorporated a
+                            contact form for client inquiries.
+                        </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-yellow-50 rounded-lg overflow-hidden shadow-lg mt-6">
+                <img src="images/game preview-2.jpg" alt="EventMasters" class="w-full">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">Football Preview Website</h2>
+                    <p class="mb-4">Engineered a dynamic football preview website using React, Node.js, and a SQL
+                        database, delivering real-time match statistics and team news. </p>
+                    <div class="bg-yellow-900 p-6 rounded-lg shadow-md max-w-lg w-full">
+                        <button
+                            class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                            onclick="toggleAccordion(event)">
+                            More Details.. <span class="font-bold">+</span>
+                        </button>
+                        <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                            The platform features an interactive dashboard displaying upcoming fixtures and team form
+                            guides. Implemented a live score tracking system, player performance
+                            metrics, and injury updates across major leagues. The website includes a responsive design
+                            optimized for both desktop and mobile viewing, ensuring fans can access match previews on
+                            any
+                            device. <br> Integrated an API to pull historical match data and statistical analysis,
+                            enabling
+                            users
+                            to make informed predictions. The implementation led to
+                            significant user engagement with over 10,000 monthly active users demonstrating its value as
+                            a comprehensive resource for football
+                            enthusiasts.
+                        </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-yellow-50 rounded-lg overflow-hidden shadow-lg mt-6">
+                <img src="images/chat-app-2.webp" alt="ProTech Solutions" class="w-full">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">Java Chat Application</h2>
+                    <p class="mb-4">Developed a robust terminal-based chat application using Java and Java.net, enabling
+                        real-time communication between multiple users through a command-line interface. </p>
+                    <div class="bg-yellow-900 p-6 rounded-lg shadow-md max-w-lg w-full">
+                        <button
+                            class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                            onclick="toggleAccordion(event)">
+                            More Details.. <span class="font-bold">+</span>
+                        </button>
+                        <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                            The application  implements a client-server architecture using TCP/IP sockets for reliable message delivery and
+                            synchronous communication. Built features including group chat capabilities,
+                            and user status updates. Implemented multi-threading to handle concurrent user connections,
+                            ensuring smooth message broadcasting and individual chat sessions. <br> Enhanced the system with features such as message timestamps,
+                            online user listing, and chat history storage. The clean terminal interface provides an
+                            efficient, lightweight communication tool that demonstrates core networking principles and
+                            Java's capabilities in building networked applications.
+                        </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------white line----------------------------------------->
+    <div class="w-full px-8 mt-32">
+        <div class="w-full h-px bg-white mx-auto"></div>
+    </div>
+
+
+    <!---------------------------------footer section------------------------>
+    <div class="relative">
+        <div class="bg-black flex items-center justify-center mt-12">
+            <div class="text-center">
+                <!-- Name Section -->
+                <h1 class="text-3xl font-bold text-yellow-50">Sarah</h1>
+                <h2 class="text-4xl font-semibold text-yellow-50 mt-2">Huho</h2>
+                <div class="border-t-4 border-yellow-900 w-16 mx-auto mt-2"></div>
+
+                <!-- Social Icons Section -->
+                <div class="flex justify-center space-x-6 mt-6 text-gray-400">
+                    <a href="https://twitter.com" target="_blank" class="hover:text-blue-400">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-pink-500">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="hover:text-gray-900">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-blue-600">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://snapchat.com" target="_blank" class="hover:text-yellow-400">
+                        <i class="fab fa-snapchat text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="font-light bg-yellow-900 py-6 text-center text-yellow-50 mt-12">
+        copyright © Sarah made with <i class="fa-solid fa-heart text-yellow-50"></i> by Easy learning
+    </div>
+    <script>
+        // function to display the hidden contents in the about me page
+        function toggleAccordion(event) {
+            const button = event.currentTarget;
+            const content = button.nextElementSibling;
+            content.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
