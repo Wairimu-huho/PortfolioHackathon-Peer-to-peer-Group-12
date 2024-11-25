@@ -4,6 +4,9 @@
 
 A modern, responsive portfolio website built with HTML5, Tailwind CSS, JavaScript, and Bootstrap.
 
+## Live Demo
+🚀 https://wairimu-huho.github.io/PortfolioHackathon-Peer-to-peer-Group-12/
+
 ## Project Structure
 portfolio/
 │
@@ -76,10 +79,17 @@ portfolio/
 - Unified visual design across all pages
 - Optimized performance and responsiveness
 - changed home.html to index.html
+- Successfully deployed to GitHub Pages
+
+### Deployment
+- Website successfully hosted on GitHub Pages
+- Implemented proper file structure for deployment
+- Ensured all assets and links work in production
+- Optimized for performance and loading speed
 
 ## Setup Instructions
 
 1. Clone the repository
 ```bash
-git clone [repository-url]
+git clone https://github.com/Wairimu-huho/PortfolioHackathon-Peer-to-peer-Group-12.git
 
