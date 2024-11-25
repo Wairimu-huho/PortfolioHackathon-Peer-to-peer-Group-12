@@ -36,6 +36,7 @@ portfolio/
 - Created initial project structure
 - Implemented home page layout
 - Developed about page
+- Download Resume/CV section
 - Set up asset organization
 - Established base styling with Tailwind and Bootstrap
 
@@ -44,7 +45,15 @@ portfolio/
 - Modified home page footer design
 - Enhanced overall navigation structure
 
-
+### Phase 3 (Projects Branch)
+- Implemented projects showcase page
+- Added detailed project descriptions
+- Integrated project cards with hover effects
+- Showcased key projects including:
+  - Electronics E-commerce Platform
+  - Photographer Portfolio
+  - Football Preview Website
+  - Java Chat Application
 
 ## Setup Instructions
 
