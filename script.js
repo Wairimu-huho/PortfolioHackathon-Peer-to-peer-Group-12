@@ -15,3 +15,22 @@ const scrollCards = direction =>{
     }
 }
 
+const scrollLeftBtn = document.getElementById('scrollLeft');
+const scrollRightBtn = document.getElementById('scrollRight');
+const container = document.getElementById('projectsContainer');
+
+// Scroll by 300px on button click
+scrollLeftBtn.addEventListener('click', () => {
+    container.scrollBy({
+        left: -430,
+        behavior: 'smooth'
+    });
+});
+
+scrollRightBtn.addEventListener('click', () => {
+    container.scrollBy({
+        left: 430,
+        behavior: 'smooth'
+    });
+});
+

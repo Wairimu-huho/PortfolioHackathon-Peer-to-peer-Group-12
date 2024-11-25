@@ -5,30 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="https://kit.fontawesome.com/3cf439782a.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Define the animation to scroll the cards */
-        @keyframes scrollCarousel {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        /* Apply the animation to the container */
-        .scrolling-cards {
-            display: flex;
-            animation: scrollCarousel 20s linear infinite;
+        #projectsContainer {
+            
+            overflow-y: hidden; /* Disable vertical scrolling */
+            overflow-x: hidden;
         }
     </style>
+
 </head>
 
 <body class="bg-cover bg-center bg-fixed" style="background-image: url('images/header3.jpg');">
@@ -38,27 +25,31 @@
                 <ul class=" flex space-x-20 mr-32">
                     <li class="inline-block my-2">
                         <a href="home.html"
-                            class="text-black text-lg relative transform transition-all duration-300 ease-in-out hover:scale-110 hover:bg-gray-800 hover:text-gray-900">
+                            class="text-black text-lg font-bold relative hover:text-yellow-500 transition duration-300">
                             Home
                         </a>
                     </li>
                     <li class="inline-block  my-2">
-                        <a href="about.html" class="text-black text-lg relative group">
+                        <a href="about.html"
+                            class="text-black font-bold text-lg relative hover:text-yellow-500 transition duration-300">
                             About
                         </a>
                     </li>
                     <li class="inline-block my-2">
-                        <a href="skills.html" class="text-black text-lg relative group">
+                        <a href="skills.html"
+                            class="text-black font-bold text-lg relative hover:text-yellow-500 transition duration-300">
                             Skills
                         </a>
                     </li>
                     <li class="inline-block my-2">
-                        <a href="projects.html" class="text-black text-lg relative group">
+                        <a href="projects.html"
+                            class="text-black font-bold text-lg relative hover:text-yellow-500 transition duration-300">
                             Projects
                         </a>
                     </li>
                     <li class="inline-block my-2">
-                        <a href="contact.html" class="text-black text-lg relative group">
+                        <a href="contact.html"
+                            class="text-black font-bold text-lg relative hover:text-yellow-500 transition duration-300">
                             contact
                         </a>
                     </li>
@@ -81,7 +72,7 @@
                 <p class="text-black text-2xl mt-6 font-light">
                     Software Engineer from Kenya
                 </p>
-                <a href="about.html">
+                <a href="about.html" target="_blank">
                     <button
                         class="bg-black text-white mt-14 p-6 rounded-full px-28  transform transition-all duration-300 ease-in-out hover:scale-110 hover:bg-gray-800 hover:text-white">Know
                         More
@@ -95,15 +86,15 @@
     <div class="relative">
         <div class="absolute inset-x-0 top-1/4 h-full bg-black bg-opacity-90 z-0"></div>
         <div class="container z-10 mx-auto px-4  bg-black text-center relative">
-            <p class="text-yellow-50 text-xl tracking-wider">EXCLUSIVELY</p>
+            <p class="text-yellow-50 text-xl tracking-wider">VIEW</p>
 
             <div class="mt-6 flex flex-col">
                 <h2 class="text-6xl">
-                    <span class="text-yellow-900">works</span>
-                    <span class="text-yellow-50">with</span>
+                    <span class="text-yellow-900">Here</span>
+                    <span class="text-yellow-50">are</span>
                 </h2>
                 <h2 class="text-6xl text-yellow-50 mt-2">
-                    Startups and founders
+                    my Technical Skills
                 </h2>
                 <div class="w-24 h-1 bg-yellow-900 mt-4"></div>
 
@@ -120,53 +111,54 @@
                     </button>
 
                     <!-- -----------------------Cards ------------------------->
-                    <div id="card-scroll-container" class="flex overflow-x-auto  py-4 max-w-[90%] mx-auto space-x-4">
+                    <div id="card-scroll-container" class="flex overflow-x-hidden  py-4 max-w-[90%] mx-auto space-x-4">
                         <!-- Card 1 -->
                         <div
                             class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
                             <div class="rounded-lg  text-sm font-light p-10 ">
                                 <i class="fa-solid fa-code text-5xl mb-8 block"></i>
                                 <h2 class="text-2xl font-medium mb-4">Web Development</h2>
-                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                    It has roots in a piece of classical Latin literature from 45 BC,
-                                    making it over 2000 years old.</p>
-                                <a href="#">Learn more</a>
+                                <p class="text-black"> Proficient in HTML5, CSS3, and JavaScript (ES6+), along with
+                                    popular frameworks like React and Node.js. Well-versed in RESTful API design,
+                                    database management with MySQL, and version control using Git. </p>
+                                <a href="skills.html" target="_blank">Learn more</a>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div
                             class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
                             <div class="rounded-lg  text-sm font-light p-10 ">
-                                <i class="fa-solid fa-code text-5xl mb-8 block"></i>
-                                <h2 class="text-2xl font-medium mb-4">Web Development</h2>
-                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                    It has roots in a piece of classical Latin literature from 45 BC,
-                                    making it over 2000 years old.</p>
-                                <a href="#">Learn more</a>
+                                <i class="fa-brands fa-npm text-5xl mb-8 block"></i>
+                                <h2 class="text-2xl font-medium mb-4">Webpack $ NPM</h2>
+                                <p class="text-black"> Proficient in configuring webpack for optimized module bundling,
+                                    asset management, and development workflows. Strong command of npm for package
+                                    management, script automation, and dependency resolution. </p>
+                                <a href="skills.html" target="_blank">Learn more</a>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div
                             class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
                             <div class="rounded-lg  text-sm font-light p-10 ">
-                                <i class="fa-solid fa-code text-5xl mb-8 block"></i>
-                                <h2 class="text-2xl font-medium mb-4">Web Development</h2>
-                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                    It has roots in a piece of classical Latin literature from 45 BC,
-                                    making it over 2000 years old.</p>
-                                <a href="#">Learn more</a>
+                                <i class="fa-brands fa-php text-5xl mb-8 block"></i>
+                                <h2 class="text-2xl font-medium mb-4">PHP</h2>
+                                <p class="text-black">Proficient in PHP development with extensive experience building
+                                    dynamic web applications and APIs. Strong command of object-oriented programming
+                                    principles, MVC architecture, and modern PHP frameworks like Laravel and Symfony.
+                                </p>
+                                <a href="skills.html" target="_blank">Learn more</a>
                             </div>
                         </div>
                         <!-- Card 4 -->
                         <div
                             class="w-1/3 text-black p-6 rounded-lg shadow-lg flex-shrink-0 transition ease-in-out delay-150 bg-yellow-50 hover:-translate-y-4 hover:scale-110 hover:bg-yellow-900 duration-300">
                             <div class="rounded-lg  text-sm font-light p-10 ">
-                                <i class="fa-solid fa-code text-5xl mb-8 block"></i>
-                                <h2 class="text-2xl font-medium mb-4">Web Development</h2>
-                                <p class="text-black">Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                    It has roots in a piece of classical Latin literature from 45 BC,
-                                    making it over 2000 years old.</p>
-                                <a href="#">Learn more</a>
+                                <i class="fa-solid fa-code-compare text-5xl mb-8 block"></i>
+                                <h2 class="text-2xl font-medium mb-4">Git and github</h2>
+                                <p class="text-black">Proficient in version control and collaborative development using
+                                    Git and GitHub. Experienced in managing complex branching strategies, resolving
+                                    merge conflicts, and implementing Git workflows for team collaboration. </p>
+                                <a href="skills.html" target="_blank">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -177,84 +169,99 @@
 
         <!--------------------------------------projects section-------------------------------->
         <div class="mt-16 z-10 relative">
-            <h2 class="text-yellow-50 text-6xl pl-12">My Work</h2>
+            <h2 class="text-yellow-50 text-6xl p-10">My Work</h2>
             <div class="container mx-auto px-4">
-                <div class=" scrolling-cards grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
-                    <!-- Work Item 1 -->
-                    <div class="relative aspect-[3/4]  overflow-hidden group">
-                        <img src="images/e-commerce.jpg" alt="Social Media App"
-                            class="w-full h-full object-cover block rounded-lg transition-transform duration-500 group-hover:scale-110" />
-                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
-                                            flex flex-col items-center justify-center text-center px-10
-                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
-                            <h3 class="text-white font-medium text-lg mb-5">E-Commerce Website</h3>
-                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
-                                available,
-                                but the majority have suffered alteration in some form.</p>
-                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
-                                               text-red-500 hover:bg-red-50 transition-colors">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
+                <!-- Wrapper to enable horizontal scroll -->
+                <div class="relative">
+                    <div class="flex mx-auto overflow-x-auto gap-10 mt-12 scroll-smooth max-w-[90%]"
+                        id="projectsContainer">
+                        <!-- Work Item 1 -->
+                        <div class="relative w-1/3 h-auto flex-shrink-0 group">
+                            <img src="images/e commerce-3.jpg" alt="E-Commerce Website"
+                                class="w-full h-full object-cover block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
+                                    flex flex-col items-center justify-center text-center px-10
+                                    transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                <h3 class="text-white font-medium text-lg mb-5">E-Commerce Website</h3>
+                                <p class="text-white text-sm mb-5">Developed a comprehensive e-commerce platform
+                                    specializing in electronic products with seamless user experience.Implemented secure
+                                    payment processing, real-time inventory management. </p>
+                                <a href="projects.html" target="_blank" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                            text-red-500 hover:bg-red-50 transition-colors">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 2 -->
+                        <div class="relative w-1/3 h-auto flex-shrink-0 group">
+                            <img src="images/portfolio-2.jpeg" alt="Portfolio Website"
+                                class="w-full h-full object-cover block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60
+                                    flex flex-col items-center justify-center text-center px-10
+                                    transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                <h3 class="text-white font-medium text-lg mb-5">Portfolio Website</h3>
+                                <p class="text-white text-sm mb-5">Designed and developed a modern portfolio website
+                                    showcasing a photographer's work with an emphasis on visual aesthetics and
+                                    performance. Built a responsive gallery system with image lazy loading and lightbox
+                                    functionality</p>
+                                <a href="projects.html" target="_blank" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                            text-red-500 hover:bg-red-50 transition-colors">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 3 -->
+                        <div class="relative w-1/3 h-auto flex-shrink-0 group">
+                            <img src="images/chat-app-2.webp" alt="Java Chat App"
+                                class="w-full h-full object-cover block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
+                                    flex flex-col items-center justify-center text-center px-10
+                                    transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                <h3 class="text-white font-medium text-lg mb-5">Java Chat App</h3>
+                                <p class="text-white text-sm mb-5">Developed a real-time chat application running in
+                                    terminal environment using Java Socket Programming. Implemented multi-threading to
+                                    handle multiple concurrent user connections and private messaging functionality</p>
+                                <a href="projects.html" target="_blank" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                            text-red-500 hover:bg-red-50 transition-colors">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Work Item 4 -->
+                        <div class="relative w-1/3 h-auto flex-shrink-0 group">
+                            <img src="images/game preview-2.jpg"
+                                class="w-full h-full object-cover block rounded-lg transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
+                                    flex flex-col items-center justify-center text-center px-10
+                                    transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                <h3 class="text-white font-medium text-lg mb-5">Football Previer Website</h3>
+                                <p class="text-white text-sm mb-5">Created an interactive platform for football match
+                                    previews and statistics. Integrated with external APIs to fetch real-time match
+                                    data, team statistics, and player information. Implemented user authentication for
+                                    personalized match notifications and favorite team tracking</p>
+                                <a href="projects.html" target="_blank" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
+                                            text-red-500 hover:bg-red-50 transition-colors">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Work Item 2 -->
-                    <div class="relative rounded-lg overflow-hidden group">
-                        <img src="images/portfolio.jpg" alt="Portfolio Website"
-                            class="w-full h-full block rounded-lg transition-transform duration-500 group-hover:scale-110" />
-                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60
-                                            flex flex-col items-center justify-center text-center px-10
-                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
-                            <h3 class="text-white font-medium text-lg mb-5">Portfolio Website</h3>
-                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
-                                available,
-                                but the majority have suffered alteration in some form.</p>
-                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
-                                               text-red-500 hover:bg-red-50 transition-colors">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Work Item 3 -->
-                    <div class="relative rounded-lg overflow-hidden group">
-                        <img src="images/chat-app.jpg" alt="Online Shop Web"
-                            class="w-full block rounded-lg transition-transform duration-500 group-hover:scale-110" />
-                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
-                                            flex flex-col items-center justify-center text-center px-10
-                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
-                            <h3 class="text-white font-medium text-lg mb-5">Java Chat App</h3>
-                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
-                                available,
-                                but the majority have suffered alteration in some form.</p>
-                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
-                                               text-red-500 hover:bg-red-50 transition-colors">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-----------------work item 4----------------->
-                    <div class="relative rounded-lg overflow-hidden group">
-                        <img src="images/chat-app.jpg" alt="Online Shop Web"
-                            class="w-full block rounded-lg transition-transform duration-500 group-hover:scale-110" />
-                        <div class="absolute inset-0 rounded-lg bg-gradient-to-b from-black to-red-500/60 
-                                            flex flex-col items-center justify-center text-center px-10
-                                            transition-all duration-500 opacity-0 group-hover:opacity-100">
-                            <h3 class="text-white font-medium text-lg mb-5">Java Chat App</h3>
-                            <p class="text-white text-sm mb-5">There are many variations of passages of Lorem Ipsum
-                                available,
-                                but the majority have suffered alteration in some form.</p>
-                            <a href="#" class="w-14 h-14 rounded-full bg-white flex items-center justify-center
-                                               text-red-500 hover:bg-red-50 transition-colors">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <!-- Scroll Buttons -->
+                    <button id="scrollLeft"
+                        class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-500 text-white rounded-full">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="scrollRight"
+                        class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-500 text-white rounded-full">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
-
         <!----------------------------------coffee section---------------------------------->
         <div class="z-10 relative mt-16 p-10">
             <div class="flex justify-center space-x-64 bg-yellow-50 py-10">
@@ -263,7 +270,7 @@
                     <p class="mt-2 text-gray-600">Hours</p>
                 </div>
                 <div class="text-center">
-                    <h2 class="text-4xl font-bold text-yellow-900">21</h2>
+                    <h2 class="text-4xl font-bold text-yellow-900">4</h2>
                     <p class="mt-2 text-gray-600">Projects</p>
                 </div>
                 <div class="text-center">
@@ -308,8 +315,8 @@
     </div>
     <div class="font-light  bg-yellow-900 py-6 text-center text-yellow-50">
         copyright © Sarah made with <i class="fa-solid fa-heart text-yellow-50"></i> by Easy learning
-      </div>
-      
+    </div>
+
     <script src="script.js"></script>
 </body>
 
