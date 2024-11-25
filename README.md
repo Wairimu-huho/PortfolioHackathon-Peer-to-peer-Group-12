@@ -75,6 +75,7 @@ portfolio/
   - Enhanced user interaction features
 - Unified visual design across all pages
 - Optimized performance and responsiveness
+- changed home.html to index.html
 
 ## Setup Instructions
 
