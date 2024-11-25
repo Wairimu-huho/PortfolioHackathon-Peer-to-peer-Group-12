@@ -5,153 +5,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <script src="https://kit.fontawesome.com/3cf439782a.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-black">
-    <header>
-        <div>
-            <nav class="flex justify-end items-center  p-4">
-                <ul class=" flex space-x-20 mr-32">
-                    <li class="inline-block my-2">
-                        <a href="home.html"
-                            class="text-white text-lg relative transform transition-all duration-300 ease-in-out hover:scale-110 hover:bg-gray-800 hover:text-gray-900">
-                            Home
-                        </a>
-                    </li>
-                    <li class="inline-block  my-2">
-                        <a href="about.html" class="text-white text-lg relative group">
-                            About
-                        </a>
-                    </li>
-                    <li class="inline-block my-2">
-                        <a href="skills.html" class="text-white text-lg relative group">
-                            Skills
-                        </a>
-                    </li>
-                    <li class="inline-block my-2">
-                        <a href="projects.html" class="text-white text-lg relative group">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="inline-block my-2">
-                        <a href="contact.html" class="text-white text-lg relative group">
-                            contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<body class="h-screen">
+    <!-- Navigation -->
+    <header class="bg-black bg-opacity-75 top-0 left-0 w-full p-4 z-20 ">
+        <nav class="flex justify-end items-center pr-28">
+            <ul class="flex space-x-10">
+                <li>
+                    <a href="home.html" target="_blank"
+                        class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" target="_blank"
+                        class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="skills.html" target="_blank"
+                        class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" target="_blank"
+                        class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" target="_blank"
+                        class="text-white text-lg relative hover:text-yellow-500 transition duration-300">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!--------------------------------about section----------------------------->
-    <h2 class="text-6xl font-bold mb-4 text-white  ml-52">About Me</h2>
-    <section class="flex flex-col md:flex-row items-start justify-center gap-10 pt-4 ">
-
-        <!-- Left Section -->
-        <div class="bg-black rounded-lg shadow-md max-w-sm">
-
-            <img src="images/passport.jpg" alt="About Me Image" class="rounded-lg mb-4 w-full">
-            <p class="text-yellow-50 mb-4">
-                Hi, I'm Sarah Huho
-                Aspiring Software Engineer | Tech Enthusiast
-                <br>
-                <br>
-                I transform ideas into code and challenges into solutions. I'm passionate about creating innovative
-                software that makes a
-                difference. Let's build something amazing together.
-                <br>
-                <a href="assets/Wairimu CV 2024 (1).pdf.pdf" download="Sarah_Huho_CV"
-                    class="inline-block bg-yellow-700 text-black py-2 px-4 rounded-md hover:bg-yellow-50 transition-colors mt-4">
-                    Download CV
-                </a>
+    <!-- Background Section -->
+    <div class="relative min-h-screen">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/header3.jpg');">
         </div>
 
-        <!-- Right Section -->
-        <div class="bg-yellow-900 p-6 rounded-lg shadow-md max-w-lg w-full">
-            <div class="space-y-4">
-                <!-- Accordion Item 1 -->
-                <div class="border rounded-lg">
-                    <button
-                        class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
-                        onclick="toggleAccordion(event)">
-                        My Story <span class="font-bold">+</span>
-                    </button>
-                    <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
-                        I'm a recent Mathematics and Computer Science graduate from Kenyatta University, driven by a
-                        passion for using technology to solve real-world problems. Ever since I can remember, I've been
-                        driven by a singular vision: to harness the power of technology to solve real-world problems.
-                        For me, software engineering isn't just a career choice – it's a calling that perfectly aligns
-                        with my love for creation and innovation. What excites me most about software
-                        engineering is the power to transform abstract ideas into tangible solutions that make a
-                        difference. My mathematical background has sharpened my analytical thinking, while my
-                        programming skills allow me to bring innovative solutions to life. As a fresh voice in tech, I
-                        bring enthusiasm and creativity to every project, believing that thoughtful programming can
-                        address even the most complex challenges.
-                    </div>
-                </div>
-                <!-- Accordion Item 2 -->
-                <div class="border rounded-lg">
-                    <button
-                        class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
-                        onclick="toggleAccordion(event)">
-                        Educational background <span class="font-bold">+</span>
-                    </button>
-                    <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
-                        <ul>
-                            <li><span class="font-bold text-lg">2020 - 2024</span><br>Bachelor of Science Mathematics
-                                and Computer Science <br> Kenyatta University</li>
-                            <li><span class="font-bold text-lg">2024</span><br>AI Career Essentials - ALX</li>
-                            <li><span class="font-bold text-lg">2024</span><br>Software Engineer course - PLP</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Accordion Item 3 -->
-                <div class="border rounded-lg">
-                    <button
-                        class="w-full flex justify-between items-center py-3 font-bold px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
-                        onclick="toggleAccordion(event)">
-                        My interests <span class="font-bold">+</span>
-                    </button>
-                    <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
-                        Beyond the world of coding, I'm an avid reader who finds joy in exploring new worlds through
-                        books. When I'm not crafting solutions with code, you might find me swimming laps in the pool,
-                        which helps me maintain both physical fitness and mental clarity. I'm also an enthusiastic
-                        gamer, appreciating the intricate design and problem-solving aspects of video games. My love for
-                        adventure drives me to seek new experiences, whether that's exploring new places or tackling
-                        challenging projects. These diverse interests help fuel my creativity and bring a fresh
-                        perspective to my work in technology.
-                    </div>
-                </div>
-                <!-- Accordion Item 4 -->
-                <div class="border rounded-lg">
-                    <button
-                        class="w-full flex justify-between items-center py-3 font-bold px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
-                        onclick="toggleAccordion(event)">
-                        Inspiration <span class="font-bold">+</span>
-                    </button>
-                    <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
-                        What truly inspires me is the transformative power of technology to create meaningful change.
-                        Growing up in an era of rapid technological advancement, I've witnessed firsthand how innovative
-                        solutions can reshape communities and improve lives. From seeing local businesses embrace
-                        digital transformation to experiencing how mobile banking revolutionized financial access in
-                        Kenya, these real-world impacts fuel my passion for software development
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Dark Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-10"></div>
 
-    <!-------------------------footer section------------------>
-    <div class="font-light  bg-yellow-900 py-6 text-center text-yellow-50">
-        copyright © Portfolio made with <i class="fa-solid fa-heart text-yellow-50"></i> by Wairimu  Sarah 
+        <!--------------------------------about section----------------------------->
+        <div class="relative z-10 items-center justify-center h-full p-8 pb-12">
+            <h2 class="text-6xl font-bold mb-4 text-white  ml-52">About Me</h2>
+            <section class="flex flex-col md:flex-row items-start justify-center gap-10 pt-4 ">
+        
+                <!-- Left Section -->
+                <div class="bg-black rounded-lg shadow-md max-w-sm">
+        
+                    <img src="images/passport.jpg" alt="About Me Image" class="rounded-lg mb-4 w-full">
+                    <p class="text-yellow-50 mb-4">
+                        Hi, I'm Sarah Huho
+                        Aspiring Software Engineer | Tech Enthusiast
+                        <br>
+                        <br>
+                        I transform ideas into code and challenges into solutions. I'm passionate about creating innovative
+                        software that makes a
+                        difference. Let's build something amazing together.
+                        <br>
+                        <a href="assets/Wairimu CV 2024 (1).pdf.pdf" download="Sarah_Huho_CV"
+                            class="inline-block bg-yellow-700 text-black py-2 px-4 rounded-md hover:bg-yellow-50 transition-colors mt-4">
+                            Download CV
+                        </a>
+                </div>
+        
+                <!-- Right Section -->
+                <div class="bg-yellow-900 p-6 rounded-lg shadow-md max-w-lg w-full">
+                    <div class="space-y-4">
+                        <!-- Accordion Item 1 -->
+                        <div class="border rounded-lg">
+                            <button
+                                class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                                onclick="toggleAccordion(event)">
+                                My Story <span class="font-bold">+</span>
+                            </button>
+                            <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                                I'm a recent Mathematics and Computer Science graduate from Kenyatta University, driven by a
+                                passion for using technology to solve real-world problems. Ever since I can remember, I've been
+                                driven by a singular vision: to harness the power of technology to solve real-world problems.
+                                For me, software engineering isn't just a career choice – it's a calling that perfectly aligns
+                                with my love for creation and innovation. What excites me most about software
+                                engineering is the power to transform abstract ideas into tangible solutions that make a
+                                difference. My mathematical background has sharpened my analytical thinking, while my
+                                programming skills allow me to bring innovative solutions to life. As a fresh voice in tech, I
+                                bring enthusiasm and creativity to every project, believing that thoughtful programming can
+                                address even the most complex challenges.
+                            </div>
+                        </div>
+                        <!-- Accordion Item 2 -->
+                        <div class="border rounded-lg">
+                            <button
+                                class="w-full flex justify-between items-center font-bold py-3 px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                                onclick="toggleAccordion(event)">
+                                Educational background <span class="font-bold">+</span>
+                            </button>
+                            <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                                <ul>
+                                    <li><span class="font-bold text-lg">2020 - 2024</span><br>Bachelor of Science Mathematics
+                                        and Computer Science <br> Kenyatta University</li>
+                                    <li><span class="font-bold text-lg">2024</span><br>AI Career Essentials - ALX</li>
+                                    <li><span class="font-bold text-lg">2024</span><br>Software Engineer course - PLP</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 3 -->
+                        <div class="border rounded-lg">
+                            <button
+                                class="w-full flex justify-between items-center py-3 font-bold px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                                onclick="toggleAccordion(event)">
+                                My interests <span class="font-bold">+</span>
+                            </button>
+                            <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                                Beyond the world of coding, I'm an avid reader who finds joy in exploring new worlds through
+                                books. When I'm not crafting solutions with code, you might find me swimming laps in the pool,
+                                which helps me maintain both physical fitness and mental clarity. I'm also an enthusiastic
+                                gamer, appreciating the intricate design and problem-solving aspects of video games. My love for
+                                adventure drives me to seek new experiences, whether that's exploring new places or tackling
+                                challenging projects. These diverse interests help fuel my creativity and bring a fresh
+                                perspective to my work in technology.
+                            </div>
+                        </div>
+                        <!-- Accordion Item 4 -->
+                        <div class="border rounded-lg">
+                            <button
+                                class="w-full flex justify-between items-center py-3 font-bold px-4 text-left bg-yellow-50 text-black rounded-lg hover:bg-yellow-700"
+                                onclick="toggleAccordion(event)">
+                                Inspiration <span class="font-bold">+</span>
+                            </button>
+                            <div class="accordion-content hidden p-4 text-gray-700 bg-yellow-50">
+                                What truly inspires me is the transformative power of technology to create meaningful change.
+                                Growing up in an era of rapid technological advancement, I've witnessed firsthand how innovative
+                                solutions can reshape communities and improve lives. From seeing local businesses embrace
+                                digital transformation to experiencing how mobile banking revolutionized financial access in
+                                Kenya, these real-world impacts fuel my passion for software development
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
-
+    <div class="font-light bg-yellow-900 py-6 text-center text-yellow-50">
+        copyright © Sarah made with <i class="fa-solid fa-heart text-yellow-50"></i> by Easy learning
+    </div>
 
     <script>
         // function to display the hidden contents in the about me page
