@@ -55,6 +55,13 @@ portfolio/
   - Football Preview Website
   - Java Chat Application
 
+  ### Phase 4 (Contact Branch)
+- Developed contact form interface
+- Added gradient overlay for enhanced visual appeal
+- Integrated social media links
+- Implemented contact information section
+- Enhanced UI with responsive design elements
+
 ## Setup Instructions
 
 1. Clone the repository
